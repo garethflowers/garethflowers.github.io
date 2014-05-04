@@ -1,14 +1,13 @@
 # TEAM
 
-	Developer : Gareth Flowers
-	Twitter : @garethflowers
-	Site : garethflowers.me
+-    Developer : Gareth Flowers
+-    Site : http://garethflowers.me
+-    Twitter : @garethflowers
 
 # SITE
 
-	Last update : 2012/07/11
-	Languages : English
-	Doctype : HTML5
-	Standards : HTML5, CSS3, humanstxt.org, robotstxt.org
-	Components : html5shiv
-	Software : Eclipse, Gimp, Diet Coda
+-    Languages : English
+-    Doctype : HTML5
+-    Standards : HTML5, CSS3, humanstxt.org, robotstxt.org
+-    Components : html5shiv
+-    Software : Sublime Text, Pixelmator
