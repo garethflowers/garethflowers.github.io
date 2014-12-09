@@ -1,3 +1,5 @@
 name: Gareth Flowers
 markdown: redcarpet
 pygments: true
+gems:
+  - jekyll-sitemap
