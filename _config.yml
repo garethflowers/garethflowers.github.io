@@ -1,5 +1,27 @@
+# ----------------------- #
+# Site
+# ----------------------- #
+
 name: Gareth Flowers
+url: garethflowers.com
+
+author: Gareth Flowers
+author_twitter: '@garethflowers'
+author_location: England
+
+# ----------------------- #
+# Plugins
+# ----------------------- #
+
+google_analytics_id:   UA-43019773-1
+google_analytics_name: garethflowers.com
+
+# ----------------------- #
+# Jekyll
+# ----------------------- #
+
 markdown: redcarpet
-pygments: true
+highlighter: true
+
 gems:
   - jekyll-sitemap

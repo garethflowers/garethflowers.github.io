@@ -1,13 +1,9 @@
-# TEAM
+---
+---
 
--    Developer : Gareth Flowers
--    Site : http://garethflowers.me
--    Twitter : @garethflowers
+/* TEAM */
 
-# SITE
-
--    Languages : English
--    Doctype : HTML5
--    Standards : HTML5, CSS3, humanstxt.org, robotstxt.org
--    Components : html5shiv
--    Software : Sublime Text, Pixelmator
+  {{ site.author }}
+  Site : http://{{ site.url }}
+  Twitter : {{ site.author_twitter }}
+  Location : {{ site.author_location }}
