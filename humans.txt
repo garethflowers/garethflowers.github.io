@@ -1,6 +1,5 @@
 ---
 ---
-
 /* TEAM */
 
   {{ site.author }}
