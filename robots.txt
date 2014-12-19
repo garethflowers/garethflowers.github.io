@@ -1,6 +1,7 @@
+---
+---
+# {{ site.url }}
 
 User-agent: *
-
-Sitemap: http://garethflowers.me/sitemap.xml
-
-Disallow: /humans.txt
+Disallow:
+Sitemap: http://{{ site.url }}/sitemap.xml
