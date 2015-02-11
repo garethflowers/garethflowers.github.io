@@ -13,7 +13,7 @@ author_location: England
 # Plugins
 # ----------------------- #
 
-google_analytics_id:   UA-43019773-1
+google_analytics_id: UA-43019773-1
 google_analytics_name: garethflowers.com
 
 # ----------------------- #
@@ -21,7 +21,5 @@ google_analytics_name: garethflowers.com
 # ----------------------- #
 
 markdown: redcarpet
-highlighter: true
-
 gems:
   - jekyll-sitemap
