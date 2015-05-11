@@ -37,19 +37,10 @@ layout: default
   <p>I work on various <a href="/projects/">projects</a>.</p>
 
   <ul>
-    <li><a href="https://github.com/garethflowers/slender">slender</a> - Mimimalistic MVC framework for PHP</li>
-    <li><a href="https://github.com/garethflowers/nms">NMS ~ Nursery Management System</a></li>
-    <li><a href="https://github.com/garethflowers/retagit">ReTagIt</a> - A simple GUI for AtomicParsley</li>
-    <li><a href="https://github.com/garethflowers/bgchange">bgchange</a> - Command line background image changer for Windows</li>
-    <li><a href="http://sourceforge.net/projects/phpportable">PHP Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/gitportable">Git Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/nodejsportable">NodeJS Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/torbrowserportable">Tor Browser Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/apachehttpportable">Apache HTTPD Server Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/consolezportable">ConsoleZ Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/pentahodataintegrationportable">Pentaho Data Integration Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/postgresqlportable">PostgreSQL Server Portable</a></li>
-    <li><a href="http://sourceforge.net/projects/strawberryperlportable">Strawberry Perl Portable</a></li>
+    {% for repository in site.github.public_repositories %}
+    <li><a href="{{ repository.homepage }}">{{ repository.name }}</a> -
+      {{ repository.description }}</li>
+    {% endfor %}
   </ul>
 
 </section>
