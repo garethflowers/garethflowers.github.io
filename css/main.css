@@ -28,7 +28,7 @@ a {
 header {
   text-align: center;
   font-family: neuropol, helvetica, tahoma, san-serif;
-  font-size: 400%;
+  font-size: 4em;
   line-height: 1;
   padding: .6em 0;
   letter-spacing: .02em;
@@ -68,7 +68,7 @@ p iframe {
 
 footer {
   border-top: 1px solid #ccc;
-  font-size: 80%;
+  font-size: .8em;
   padding: 1.5em;
   margin-top: 1em;
   text-align: center;
@@ -76,6 +76,36 @@ footer {
 
 footer img {
   padding: 1em;
+}
+
+.button {
+  background-color: #eee;
+  background-image: -webkit-linear-gradient(#fff,#dedede);
+  background-image: linear-gradient(#fff,#dedede);
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 2px 8px;
+  margin: 10px;
+  text-shadow: 0 1px 0 rgb(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: .9em;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #000;
+  display: inline-block;
+}
+
+.button:focus, .button:hover, .button:active {
+  border-color: #bbb;
+  background-color: #d9d9d9;
+  background-image: -webkit-linear-gradient(#f8f8f8,#d9d9d9);
+  background-image: linear-gradient(#f8f8f8,#d9d9d9);
+  box-shadow: none;
+}
+
+.button img {
+  height: 20px;
+  vertical-align: text-bottom;
 }
 
 #logo {
