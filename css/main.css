@@ -58,12 +58,7 @@ p {
 
 p img {
   vertical-align: middle;
-  padding: 0 .4em;
-}
-
-p iframe {
-  vertical-align: top;
-  padding: 0 .4em;
+  padding: 0 .2em;
 }
 
 footer {
