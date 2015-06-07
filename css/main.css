@@ -134,4 +134,10 @@ footer img {
     float: none;
   }
 
+  .button {
+    padding: 6px 20px;
+    display: block;
+    text-align: center;;
+  }
+
 }
