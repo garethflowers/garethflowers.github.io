@@ -32,7 +32,7 @@ header {
   line-height: 1;
   padding: .6em 0;
   letter-spacing: .02em;
-  text-shadow: 0 0 2em #000;
+  text-shadow: 0 0 .5em #000;
 }
 
 h1 {
