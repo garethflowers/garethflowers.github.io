@@ -38,13 +38,15 @@ header {
 h1 {
   font-weight: bold;
   font-size: 1.1em;
-  margin: 0;
+  margin: 1em 0;
+  padding: 0;
 }
 
 h2 {
   font-weight: bold;
   font-size: 1em;
-  margin: 0;
+  margin: 1em 0;
+  padding: 0;
 }
 
 section {
@@ -53,7 +55,8 @@ section {
 }
 
 p {
-  padding: .5em 0;
+  margin: .8em 0;
+  padding: 0;
 }
 
 p img {
