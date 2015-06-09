@@ -72,8 +72,14 @@ footer {
   text-align: center;
 }
 
-footer img {
-  padding: 1em;
+footer div:first-child {
+  font-weight: bold;
+}
+
+#logo {
+  box-shadow: 0 0 2em #999;
+  margin-right: 4em;
+  float: left;
 }
 
 .button {
@@ -102,14 +108,27 @@ footer img {
 }
 
 .button img {
-  height: 20px;
+  height: 1em;
   vertical-align: text-bottom;
 }
 
-#logo {
-  box-shadow: 0 0 2em #999;
-  margin-right: 4em;
-  float: left;
+.grid {
+  text-align: center;
+}
+
+.grid div {
+  display: inline-block;
+  margin: .25em;
+  padding: 1.5em;
+}
+
+.grid div:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 1em;
+}
+
+.grid div img {
+  max-height: 6em;
 }
 
 @media screen and (max-width: 640px) {
@@ -141,6 +160,11 @@ footer img {
     padding: 6px 20px;
     display: block;
     text-align: center;;
+  }
+
+  .grid div {
+    margin: .5em;
+    padding: 2em;
   }
 
 }

@@ -44,18 +44,16 @@ layout: default
 
 </section>
 
-<section id="socialme">
+<section>
 
-  <h1><a href="/social">On The Web</a></h1>
+  <h1>On The Web</h1>
 
-  <p>Find me on <a href="/social">various sites</a> around the web:</p>
+  <p>You can usually find me as @garethflowers around the web...</p>
 
-  <ul>
-    <li><a href="https://twitter.com/garethflowers">Twitter</a></li>
-    <li><a href="http://stackoverflow.com/users/1322772/garethflowers">StackOverflow</a></li>
-    <li><a href="http://sourceforge.net/u/gareth-flowers">SourceForge</a></li>
-    <li><a href="https://uk.linkedin.com/in/garethflowers">LinkedIn</a></li>
-    <li><a href="https://github.com/garethflowers">GitHub</a></li>
-  </ul>
+  <div class="grid">
+  {% for social in site.data.social %}
+    <div><a href="{{ social.url }}"><img src="{{ social.image }}" alt="{{ social.site }}"></a></div>
+  {% endfor %}
+  </div>
 
 </section>

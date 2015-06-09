@@ -1,0 +1,19 @@
+- site: GitHub
+  url: https://github.com/garethflowers
+  image: /images/github.svg
+
+- site: Twitter
+  url: https://twitter.com/garethflowers
+  image: /images/twitter.svg
+
+- site: Stack Exchange
+  url: https://stackexchange.com/users/1392225/garethflowers
+  image: /images/stackexchange.svg
+
+- site: Source Forge
+  url: http://sourceforge.net/u/gareth-flowers
+  image: /images/sourceforge.svg
+
+- site: LinkedIn
+  url: https://uk.linkedin.com/in/garethflowers
+  image: /images/linkedin.svg
