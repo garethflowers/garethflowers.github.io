@@ -52,7 +52,8 @@ layout: default
 
   <div class="grid">
   {% for social in site.data.social %}
-    <div><a href="{{ social.url }}"><img src="{{ social.image }}" alt="{{ social.site }}"></a></div>
+    <div><a href="{{ social.url }}"><img src="{{ social.image }}" alt="{{ social.site }}">
+      <span>{{ social.site }}</span></a></div>
   {% endfor %}
   </div>
 

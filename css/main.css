@@ -121,17 +121,15 @@ footer div:first-child {
 
 .grid div {
   display: inline-block;
-  margin: .25em;
-  padding: 1.5em;
+  margin: 1em;
 }
 
-.grid div:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 1em;
+.grid div span {
+  display: block;
 }
 
 .grid div img {
-  max-height: 6em;
+  max-height: 5em;
 }
 
 @media screen and (max-width: 640px) {
@@ -162,12 +160,11 @@ footer div:first-child {
   .button {
     padding: 6px 20px;
     display: block;
-    text-align: center;;
+    text-align: center;
   }
 
-  .grid div {
-    margin: .5em;
-    padding: 2em;
+  .grid div img {
+    max-height: 3em;
   }
 
 }
