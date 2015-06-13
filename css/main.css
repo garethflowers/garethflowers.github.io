@@ -79,6 +79,7 @@ footer div:first-child {
 .logo {
   margin-right: 4em;
   float: left;
+  height: 12em;
 }
 
 .logo-portfolio {
@@ -153,6 +154,7 @@ footer div:first-child {
 
   .logo {
     margin: 1em auto 2em auto;
+    height: 8em;
     display: block;
     float: none;
   }
