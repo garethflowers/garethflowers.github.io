@@ -28,33 +28,3 @@ layout: default
   </div>
 
 </section>
-
-<section>
-
-  <h1><a href="/projects/">Projects</a></h1>
-
-  <p>I work on various <a href="/projects/">projects</a>.</p>
-
-  <ul>
-    {% for repository in site.github.public_repositories %}
-    <li><a href="{{ repository.homepage }}">{{ repository.name }}</a> -
-      {{ repository.description }}</li>
-    {% endfor %}
-  </ul>
-
-</section>
-
-<section>
-
-  <h1>On The Web</h1>
-
-  <p>You can usually find me as @garethflowers around the web...</p>
-
-  <div class="grid">
-  {% for social in site.data.social %}
-    <div><a href="{{ social.url }}"><img src="{{ social.image }}" alt="{{ social.site }}">
-      <span>{{ social.site }}</span></a></div>
-  {% endfor %}
-  </div>
-
-</section>
