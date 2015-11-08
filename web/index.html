@@ -1,0 +1,19 @@
+---
+layout: default
+title: On The Web
+---
+
+<section>
+
+  <h1>On The Web</h1>
+
+  <p>You can usually find me as @garethflowers around the web...</p>
+
+  <div class="grid">
+  {% for social in site.data.social %}
+    <div><a href="{{ social.url }}"><img src="{{ social.image }}" alt="{{ social.site }}">
+      <span>{{ social.site }}</span></a></div>
+  {% endfor %}
+  </div>
+
+</section>

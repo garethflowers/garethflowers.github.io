@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="IE=edge">
-        <title>{{ site.name }}</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <meta name="description" content="Personal website of Gareth Flowers - software developer and tech geek!">
-        <meta name="keywords" content="gareth, flowers, developer, programmer, software, tech, geek">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
-        <meta name="application-name" content="{{ site.name }}">
-        <meta name="msapplication-tooltip" content="{{ site.name }}">
-        <meta name="msapplication-navbutton-color" content="rgb(65,131,196)">
-        <meta name="msapplication-starturl" content="/">
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-        <link rel="author" type="text/plain" href="/humans.txt">
-        <link rel="icon" sizes="228x228" href="/apple-touch-icon.png">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-        <link rel="apple-touch-startup-image" href="/images/startup/1536x2008.png" media="(device-width:768px) and (orientation:portrait) and (-webkit-device-pixel-ratio:2)">
-        <link rel="apple-touch-startup-image" href="/images/startup/1496x2048.png" media="(device-width:768px) and (orientation:landscape) and (-webkit-device-pixel-ratio:2)">
-        <link rel="apple-touch-startup-image" href="/images/startup/768x1004.png" media="(device-width:768px) and (orientation:portrait) and (-webkit-device-pixel-ratio:1)">
-        <link rel="apple-touch-startup-image" href="/images/startup/748x1024.png" media="(device-width:768px) and (orientation:landscape) and (-webkit-device-pixel-ratio:1)">
-        <link rel="apple-touch-startup-image" href="/images/startup/640x1096.png" media="(device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2)">
-        <link rel="apple-touch-startup-image" href="/images/startup/640x920.png" media="(device-width:320px) and (device-height:480px) and (-webkit-device-pixel-ratio:2)">
-        <link rel="apple-touch-startup-image" href="/images/startup/320x460.png" media="(device-width:320px) and (device-height:480px) and (-webkit-device-pixel-ratio:1)">
-        <!--[if lt IE 9]><script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
-    </head>
-    <body itemscope="" itemtype="http://www.data-vocabulary.org/Person">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>{{ site.name }}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Personal website of Gareth Flowers - software developer and tech geek!">
+    <meta name="keywords" content="gareth, flowers, developer, programmer, software, tech, geek">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="{{ site.name }}">
+    <meta name="application-name" content="{{ site.name }}">
+    <meta name="msapplication-tooltip" content="{{ site.name }}">
+    <meta name="msapplication-navbutton-color" content="rgb(65,131,196)">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="author" type="text/plain" href="/humans.txt">
+    <link rel="icon" sizes="228x228" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="/images/startup/1536x2008.png" media="(device-width:768px) and (orientation:portrait) and (-webkit-device-pixel-ratio:2)">
+    <link rel="apple-touch-startup-image" href="/images/startup/1496x2048.png" media="(device-width:768px) and (orientation:landscape) and (-webkit-device-pixel-ratio:2)">
+    <link rel="apple-touch-startup-image" href="/images/startup/768x1004.png" media="(device-width:768px) and (orientation:portrait) and (-webkit-device-pixel-ratio:1)">
+    <link rel="apple-touch-startup-image" href="/images/startup/748x1024.png" media="(device-width:768px) and (orientation:landscape) and (-webkit-device-pixel-ratio:1)">
+    <link rel="apple-touch-startup-image" href="/images/startup/640x1096.png" media="(device-width:320px) and (device-height:568px) and (-webkit-device-pixel-ratio:2)">
+    <link rel="apple-touch-startup-image" href="/images/startup/640x920.png" media="(device-width:320px) and (device-height:480px) and (-webkit-device-pixel-ratio:2)">
+    <link rel="apple-touch-startup-image" href="/images/startup/320x460.png" media="(device-width:320px) and (device-height:480px) and (-webkit-device-pixel-ratio:1)">
+    <!--[if lt IE 9]><script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
+  </head>
+  <body itemscope="" itemtype="http://www.data-vocabulary.org/Person">
 
-        <header itemprop="name">
-            {{ site.name }}
-        </header>
+    <header itemprop="name">
+      {{ site.name }}
+    </header>
 
-        <div id="content">
-          {{ content }}
-        </div>
+    <div id="content">
+      {{ content }}
+    </div>
 
-        <footer>
-          <a href="/">{{ site.author }}</a>, {{ site.time | date: "%Y" }}
-        </footer>
+    <footer>
+      <a href="/projects/">projects</a> |
+      <a href="/web/">on the web</a>
+      <br>
+      <a href="/">{{ site.author }}</a>,
+      &copy; {{ site.time | date: "%Y" }}
+    </footer>
 
-    </body>
+  </body>
 </html>
