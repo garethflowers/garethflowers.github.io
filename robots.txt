@@ -1,6 +1,6 @@
 ---
 ---
-# {{ site.url }}
+# {{ site.github.url }}
 
 User-agent: *
 Disallow:
