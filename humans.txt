@@ -3,6 +3,6 @@
 /* TEAM */
 
   {{ site.author }}
-  Site : http://{{ site.url }}
+  Site : {{ site.github.url }}
   Twitter : {{ site.author_twitter }}
   Location : {{ site.author_location }}
