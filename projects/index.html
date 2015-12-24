@@ -9,11 +9,14 @@ title: Projects
 
   <p>I work on various projects.</p>
 
+  {% if site.github.public_repositories %}
   <ul>
-    {% for repository in site.github.public_repositories %}
-    <li><a href="{{ repository.homepage }}">{{ repository.name }}</a> -
-      {{ repository.description }}</li>
-    {% endfor %}
+  {% assign sorted_repositories = site.github.public_repositories | sort: 'stargazers_count' %}
+  {% for repository in sorted_repositories reversed %}
+  <li><a href="{{ repository.html_url }}">{{ repository.name }}</a> -
+    {{ repository.description }}</li>
+  {% endfor %}
   </ul>
+  {% endif %}
 
 </section>
