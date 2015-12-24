@@ -13,7 +13,7 @@ title: Projects
   <ul>
   {% assign sorted_repositories = site.github.public_repositories | sort: 'stargazers_count' %}
   {% for repository in sorted_repositories reversed %}
-  <li><a href="{{ repository.html_url }}">{{ repository.name }}</a> -
+  <li><a href="{{ repository.url }}">{{ repository.name }}</a> -
     {{ repository.description }}</li>
   {% endfor %}
   </ul>
