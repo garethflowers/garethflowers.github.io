@@ -35,6 +35,10 @@ header {
   text-shadow: 0 0 .5em #000;
 }
 
+header a {
+  color: inherit;
+}
+
 h1 {
   font-weight: bold;
   font-size: 1.1em;
