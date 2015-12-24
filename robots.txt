@@ -4,4 +4,4 @@
 
 User-agent: *
 Disallow:
-Sitemap: http://{{ site.url }}/sitemap.xml
+Sitemap: {{ site.github.url }}/sitemap.xml
