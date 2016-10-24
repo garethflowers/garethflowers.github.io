@@ -81,7 +81,19 @@ footer {
 }
 
 footer img {
-  height: 2em;
+  height: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+footer svg {
+  fill: currentColor;
+}
+
+footer a {
+  font-family: neuropol, helvetica, tahoma, san-serif;
+  font-size: 1.5em;
+  color: inherit;
 }
 
 .logo {
