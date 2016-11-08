@@ -150,7 +150,7 @@ footer a {
 }
 
 .grid div img {
-  max-height: 5em;
+  height: 5em;
 }
 
 @media screen and (max-width: 640px) {
@@ -186,7 +186,7 @@ footer a {
   }
 
   .grid div img {
-    max-height: 3em;
+    height: 3em;
   }
 
 }
