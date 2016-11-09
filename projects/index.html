@@ -7,14 +7,13 @@ title: Projects
 
   <h1>Projects</h1>
 
-  {% if site.github.public_repositories %}
-  <ul>
-  {% assign sorted_repositories = site.github.public_repositories | sort: 'stargazers_count' %}
-  {% for repository in sorted_repositories reversed %}
-  <li><a href="{{ repository.homepage }}">{{ repository.name }}</a> -
-    {{ repository.description }}</li>
-  {% endfor %}
-  </ul>
-  {% endif %}
+  <div class="grid">
+    {% for project in site.data.projects %}
+    <div>
+      <a href="/{{ project.project }}"><img src="/{{ project.project }}/logo.svg" alt="{{ project.name }}">
+        <span>{{ project.project }}</span></a>
+    </div>
+    {% endfor %}
+  </div>
 
 </section>
