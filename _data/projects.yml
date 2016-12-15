@@ -13,6 +13,9 @@
 - project: nodejs-portable
   name: NodeJS Portable
 
+- project: netbeans-portable
+  name: NetBeans Portable
+
 - project: nms
   name: NMS
 
