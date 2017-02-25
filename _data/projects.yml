@@ -16,6 +16,9 @@
 - project: netbeans-portable
   name: NetBeans Portable
 
+- project: ilspy-portable
+  name: ILSpy Portable
+
 - project: nms
   name: NMS
 
