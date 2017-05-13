@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: neuropol;
-  src: url('neuropol.otf');
+  src: url('neuropol-x-lite.woff2') format('woff2'), url('neuropol-x-lite.woff') format('woff');
 }
 
 /*****************************************************************************/
