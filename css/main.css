@@ -28,10 +28,10 @@ a {
 header {
   text-align: center;
   font-family: neuropol, helvetica, tahoma, san-serif;
+  font-weight: bold;
   font-size: 4em;
   line-height: 1;
   padding: .6em 0;
-  letter-spacing: .02em;
   text-shadow: 0 0 .5em #000;
 }
 
