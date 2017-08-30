@@ -30,7 +30,7 @@ header {
   text-align: center;
   font-family: neuropol, helvetica, tahoma, san-serif;
   font-weight: bold;
-  font-size: 4em;
+  font-size: 10vmin;
   line-height: 1;
   padding: .6em 0;
 }
@@ -155,7 +155,6 @@ footer a {
 
   header {
     padding: 0;
-    font-size: 300%;
   }
 
   section {
