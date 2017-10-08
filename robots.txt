@@ -1,7 +1,6 @@
 ---
 ---
-# {{ site.github.url }}
-
 User-agent: *
 Disallow:
-Sitemap: {{ site.github.url }}/sitemap.xml
+
+Sitemap: /sitemap.xml
