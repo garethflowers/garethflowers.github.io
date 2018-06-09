@@ -2,7 +2,7 @@
 ---
 /* TEAM */
 
-  {{ site.author }}
-  Site : {{ site.github.url }}
-  Twitter : {{ site.author_twitter }}
-  Location : {{ site.author_location }}
+	{{ site.author }}
+	Site : {{ site.github.url }}
+	Twitter : {{ site.author_twitter }}
+	Location : {{ site.author_location }}
