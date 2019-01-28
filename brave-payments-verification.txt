@@ -1,0 +1,2 @@
+layout: none
+permalink: .well-known/brave-payments-verification.txt
