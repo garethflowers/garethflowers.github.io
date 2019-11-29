@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: gareth.flowers 
-Token: 3eb64b5e6714164bca961cfd9998f0ffc2f945f70af3565755c2694f0fc502ac
