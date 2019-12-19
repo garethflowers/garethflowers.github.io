@@ -1,15 +1,7 @@
-/*****************************************************************************/
-/* Fonts
-/*****************************************************************************/
-
 @font-face {
 	font-family: neuropol;
-	src: url('neuropol-x-lite.woff2') format('woff2'), url('neuropol-x-lite.woff') format('woff');
+	src: url("neuropol-x-lite.woff2") format("woff2"), url("neuropol-x-lite.woff") format("woff");
 }
-
-/*****************************************************************************/
-/* Layout
-/*****************************************************************************/
 
 body {
 	color: #333;
@@ -27,7 +19,7 @@ a {
 }
 
 header {
-	font-family: neuropol, helvetica, tahoma, san-serif;
+	font-family: neuropol, helvetica, tahoma, sans-serif;
 	font-size: 10vmin;
 	font-weight: bold;
 	line-height: 1;
@@ -36,7 +28,7 @@ header {
 }
 
 header a {
-  	color: inherit;
+	color: inherit;
 }
 
 h1 {
@@ -59,7 +51,7 @@ section {
 }
 
 img {
-  	border: 0;
+	border: 0;
 }
 
 p {
@@ -87,11 +79,11 @@ footer img {
 }
 
 footer svg {
-  	fill: currentColor;
+	fill: currentColor;
 }
 
 footer a {
-  	color: inherit;
+	color: inherit;
 }
 
 .logo {
@@ -102,7 +94,7 @@ footer a {
 }
 
 .logo-portfolio {
-  	box-shadow: 0 0 2em #999;
+	box-shadow: 0 0 2em #999;
 }
 
 .button {
