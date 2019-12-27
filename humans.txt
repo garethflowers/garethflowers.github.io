@@ -1,8 +1,6 @@
----
----
-/* TEAM */
 
-	{{ site.author }}
-	Site : {{ site.github.url }}
-	Twitter : {{ site.author_twitter }}
-	Location : {{ site.author_location }}
+    __|               |   |    __| |
+   (_ |  _` |  _| -_)  _|   \  _|  |  _ \ \  \ / -_)  _|(_-<
+  \___|\__,_|_| \___|\__|_| _|_|  _|\___/\_/\_/\___|_|  ___/
+
+  @garethflowers
