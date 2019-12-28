@@ -4,8 +4,8 @@ layout: default
 
 <section id="about">
 
-	<img class="logo logo-portfolio" itemprop="photo" src="{{ site.github.owner_gravatar_url }}?s=250" srcset="{{ site.github.owner_gravatar_url }}?s=500 2x"
-	 alt="Profile photo of Gareth Flowers">
+	<img class="logo logo-portfolio" itemprop="photo" src="{{ site.avatar }}?s=250"
+		srcset="{{ site.avatar }}?s=500 2x" alt="Profile photo of {{ site.author }}">
 
 	<h1>I mostly write code</h1>
 
@@ -13,18 +13,20 @@ layout: default
 		<span itemprop="role title">Software Developer</span> currently working for
 		<span>
 			<a href="https://www.merlinbusinesssoftware.com">
-				<img src="/images/merlin.svg" alt="Merlin Business Software" itemprop="affiliation" style="height:30px">
+				<img src="/images/merlin.svg" alt="Merlin Business Software"
+					itemprop="affiliation" style="height:30px">
 			</a>
 		</span> in
-		<span itemprop="location">Chesterfield, England</span>. We develop a suite of business software, focusing primarily around a leading enterprise level
+		<span itemprop="location">{{ site.author_location }}</span>. We develop a suite
+		of business software, focusing primarily around a leading enterprise level
 		ERP system.
 	</p>
 
 	<nav id="links">
-		<a href="{{ site.github.owner_url }}" class="button">
-			<img src="/images/github.svg" alt="GitHub"> Follow @{{ site.github.owner_name }}</a>
-		<a href="https://twitter.com/garethflowers" class="button">
-			<img src="/images/twitter.svg" alt="Twitter"> Follow {{ site.author_twitter }}</a>
+		<a href="https://github.com/{{ site.username.github }}" class="button">
+			<img src="/images/github.svg" alt="GitHub"> Follow @{{ site.username.github }}</a>
+		<a href="https://twitter.com/{{ site.username.twitter }}" class="button">
+			<img src="/images/twitter.svg" alt="Twitter"> Follow @{{ site.username.twitter }}</a>
 	</nav>
 
 </section>

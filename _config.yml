@@ -1,21 +1,18 @@
-# ----------------------- #
 # Site
-# ----------------------- #
-
+author:
+  location: England
+  name: Gareth Flowers
+avatar: https://secure.gravatar.com/avatar/5750e5553f140aa42f68c6bbefed6989
+description: Full Stack Developer
 title: Gareth Flowers
-author: Gareth Flowers
-author_twitter: '@garethflowers'
-author_location: England
+username:
+  twitter: garethflowers
+  github: garethflowers
 
-# ----------------------- #
-# Jekyll
-# ----------------------- #
-
+# Config
 exclude:
-  - Gemfile
   - Gemfile.lock
   - README.md
-  - vendor/
 gems:
   - jekyll-sitemap
 include:
