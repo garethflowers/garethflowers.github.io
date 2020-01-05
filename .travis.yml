@@ -1,6 +1,16 @@
 language: ruby
-sudo: false
-script: "bundle exec jekyll build"
+
+addons:
+  apt:
+    update: true
+
+before_install:
+  - yes | gem update --system --force
+  - gem install bundler
+
 branches:
   only:
     - master
+
+script:
+  - bundle exec jekyll build
