@@ -8,13 +8,16 @@ title: Gareth Flowers
 username:
   twitter: garethflowers
   github: garethflowers
+layout: default
+
+collections:
+  projects:
+    output: true
 
 # Config
 exclude:
   - Gemfile.lock
   - README.md
-gems:
+plugins:
   - jekyll-sitemap
-include:
-  - .well-known
 markdown: kramdown

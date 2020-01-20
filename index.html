@@ -2,23 +2,18 @@
 layout: default
 ---
 
-<section id="about">
+<section>
 
 	<img class="logo logo-portfolio" itemprop="photo" src="{{ site.avatar }}?s=250"
 		srcset="{{ site.avatar }}?s=500 2x" alt="Profile photo of {{ site.author.name }}">
 
 	<h1>I mostly write code</h1>
 
-	<p>I'm a
-		<span itemprop="role title">Software Developer</span> currently working for
-		<span>
-			<a href="https://www.merlinbusinesssoftware.com">
-				<img src="/images/merlin.svg" alt="Merlin Business Software"
-					itemprop="affiliation" style="height:30px">
-			</a>
-		</span> in
-		<span itemprop="location">{{ site.author.location }}</span>. We develop a suite
-		of business software, focusing primarily around a leading enterprise level
+	<p>I'm a <span itemprop="role title">full-stack developer</span> at
+		<a href="https://www.merlinbusinesssoftware.com">
+			<img src="/images/merlin.svg" alt="Merlin Business Software"
+				itemprop="affiliation" style="height:30px">
+		</a> specialising in Angular and NodeJS. We develop a suite of business software, focusing primarily around a leading enterprise level
 		ERP system.
 	</p>
 
@@ -29,4 +24,19 @@ layout: default
 			<img src="/images/twitter.svg" alt="Twitter"> Follow @{{ site.username.twitter }}</a>
 	</nav>
 
+</section>
+
+<section>
+	<h1>Projects</h1>
+	<div class="grid">
+		{% for project in site.projects %}
+		<div>
+			<a href="/{{ project.slug }}">
+				<img src="/{{ project.slug }}/logo.svg"
+					alt="{{ project.title }}">
+				<span>{{ project.title }}</span>
+			</a>
+		</div>
+		{% endfor %}
+	</div>
 </section>
