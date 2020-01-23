@@ -4,25 +4,21 @@ layout: default
 
 <section>
 	{% for project in site.projects %}
-
 	<article>
-
 		<div>
 			<a href="/{{ project.slug }}">
-				<img src="/{{ project.slug }}/logo.svg"
+				<img src="/assets/{{ project.slug }}.svg"
 					alt="{{ project.title }}">
 			</a>
 		</div>
-
 		<h1>
 			<a href="/{{ project.slug }}">
 				{{ project.title }}
 			</a>
 		</h1>
-
-		<div>{{ project.content }}</div>
-
+		<div>
+			{{ project.description }}
+		</div>
 	</article>
-
 	{% endfor %}
 </section>
