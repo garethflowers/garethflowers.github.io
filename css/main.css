@@ -16,6 +16,7 @@ body {
 	display: grid;
 	font-family: var(--font);
 	font-size: 16px;
+	grid-gap: var(--base);
 	grid-template-columns: 40% 60%;
 	line-height: 200%;
 	margin: 0 auto;
@@ -34,19 +35,15 @@ header {
 	flex-direction: column;
 	font-family: var(--font-feature);
 	line-height: 1;
+	text-align: center;
 }
 
 .logo {
 	border-radius: 50%;
 	box-shadow: 0 0 2em #999;
-	filter: grayscale(.9);
 	margin: var(--base);
 	max-height: calc(var(--base) * 12);
-	transition: .5s filter ease;
-}
-
-.logo:hover {
-	filter: grayscale(.5);
+	max-width: calc(var(--base) * 12);
 }
 
 header div {
@@ -58,13 +55,13 @@ header div {
 header h1 {
 	font-size: var(--base-large);
 	font-weight: 300;
-	margin: calc(var(--base));
+	margin: calc(var(--base)) 0;
 }
 
 header h2 {
 	font-size: 1.2rem;
 	font-weight: 300;
-	margin: var(--base-small);
+	margin: var(--base-small) 0;
 }
 
 header nav img{
@@ -95,6 +92,10 @@ article {
 	text-align: center;
 }
 
+article img {
+	height: calc(var(--base-large) * 4);
+}
+
 h1 {
 	font-size: calc(var(--base) * 1.5);
 }
@@ -111,49 +112,26 @@ p img {
 
 section {
 	display: grid;
-	gap: var(--base);
+	grid-gap: var(--base);
 	grid-template-columns: repeat(auto-fit, minmax(calc(var(--base) * 15), 1fr));
 }
 
-@media screen and (max-width: 980px) {
-	header {
-		font-size: 4rem;
-	}
+.effect {
+	filter: grayscale(1);
+	transition: .5s filter ease;
+}
+
+.effect:hover {
+	filter: grayscale(.4);
 }
 
 @media screen and (max-width: 640px) {
 
 	body {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
 		padding: 1em;
-	}
-
-	header {
-		padding: 0;
-	}
-
-	section {
-		padding: 1em 0;
-	}
-
-	p {
-		padding: .2em 0;
-	}
-
-	.logo {
-		display: block;
-		float: none;
-		height: 8em;
-		margin: 1em auto 2em auto;
-	}
-
-	.button {
-		display: block;
-		padding: 6px 20px;
-		text-align: center;
-	}
-
-	.grid div img {
-		height: 3em;
 	}
 
 }

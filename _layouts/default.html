@@ -44,7 +44,7 @@
 
 <body itemscope itemtype="http://schema.org/Person">
 	<header itemprop="name">
-		<img class="logo" itemprop="photo" src="{{ site.avatar }}?s=250"
+		<img class="logo effect" itemprop="photo" src="{{ site.avatar }}?s=250"
 			srcset="{{ site.avatar }}?s=500 2x"
 			alt="Profile photo of {{ site.author.name }}">
 		<h1>
@@ -63,13 +63,13 @@
 		</nav>
 		<div class="job">works at <a
 				href="https://www.merlinbusinesssoftware.com">
-				<img class="work" src="/images/merlin.svg"
+				<img class="work effect" src="/images/merlin.svg"
 					alt="Merlin Business Software" itemprop="image"
 					itemprop="worksFor">
 			</a>
 		</div>
 	</header>
-	<div>{{ content }}</div>
+	{{ content }}
 </body>
 
 </html>
