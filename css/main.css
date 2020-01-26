@@ -3,10 +3,10 @@
 	--base-large: calc(var(--base) * 2);
 	--base-small: calc(var(--base) / 2);
 	--color-back-light: rgb(255, 255, 255);
-	--color-back: rgb(252, 252, 252);
-	--color-back-alt: rgb(249, 249, 249);
-	--color-link: #369;
-	--color-text: #333;
+	--color-back: rgb(250, 250, 250);
+	--color-back-alt: rgb(245, 245, 245);
+	--color-link: rgb(51, 102, 153);
+	--color-text: #rgb(51, 51, 51);
 	--font:  "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	--font-feature: "Open Sans", Helvetica, sans-serif;
 }
