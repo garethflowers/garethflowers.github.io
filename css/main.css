@@ -8,7 +8,6 @@
 	--color-link: rgb(51, 102, 153);
 	--color-text: #rgb(51, 51, 51);
 	--font:  "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	--font-feature: "Open Sans", Helvetica, sans-serif;
 }
 
 body {
@@ -41,7 +40,7 @@ header {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	font-family: var(--font-feature);
+	font-family: var(--font);
 	line-height: 1;
 	text-align: center;
 }
