@@ -3,7 +3,8 @@ layout: default
 ---
 
 <section>
-	{% for project in site.projects %}
+	{% assign projects = site.projects | sort: "description" %}
+	{% for project in projects %}
 	<article>
 		<div>
 			<a href="/{{ project.slug }}">
@@ -16,8 +17,13 @@ layout: default
 				{{ project.title }}
 			</a>
 		</h1>
-		<div>
+		<p>
 			{{ project.description }}
+		</p>
+		<div>
+			<a class="view-project" href="{{ project.slug }}">
+				View Details
+			</a>
 		</div>
 	</article>
 	{% endfor %}

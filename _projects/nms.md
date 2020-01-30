@@ -1,6 +1,7 @@
 ---
 description: Nursery Management System
-layout: default
+layout: project
+link: https://github.com/garethflowers/nms
 permalink: /nms/
 title: NMS
 ---

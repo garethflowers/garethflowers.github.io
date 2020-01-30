@@ -1,13 +1,15 @@
 :root {
-	--base: 1rem;
 	--base-large: calc(var(--base) * 2);
 	--base-small: calc(var(--base) / 2);
+	--base: 1rem;
+	--color-back-alt: rgb(245, 245, 245);
 	--color-back-light: rgb(255, 255, 255);
 	--color-back: rgb(250, 250, 250);
-	--color-back-alt: rgb(245, 245, 245);
+	--color-border: rgb(200, 200, 200);
 	--color-link: rgb(51, 102, 153);
+	--color-link-hover: rgb(41, 82, 123);
 	--color-text: #rgb(51, 51, 51);
-	--font:  "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -25,7 +27,7 @@ body {
 	font-size: 16px;
 	grid-gap: var(--base);
 	grid-template-columns: 40% 60%;
-	line-height: 200%;
+	line-height: 2;
 	margin: 0 auto;
 	max-width: 980px;
 	padding: calc(var(--base) * 4);
@@ -36,6 +38,10 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: var(--color-link-hover);
+}
+
 header {
 	align-items: center;
 	display: flex;
@@ -43,14 +49,6 @@ header {
 	font-family: var(--font);
 	line-height: 1;
 	text-align: center;
-}
-
-.logo {
-	border-radius: 50%;
-	box-shadow: 0 0 2em #999;
-	margin: var(--base);
-	max-height: calc(var(--base) * 12);
-	max-width: calc(var(--base) * 12);
 }
 
 header div {
@@ -76,6 +74,14 @@ header nav img{
 	padding: var(--base-small);
 }
 
+header .logo {
+	border-radius: 50%;
+	box-shadow: 0 0 2em #999;
+	margin: var(--base);
+	max-height: calc(var(--base) * 12);
+	max-width: calc(var(--base) * 12);
+}
+
 header .job img {
 	height: calc(var(--base) * 1.5);
 	padding: var(--base-small);
@@ -92,15 +98,27 @@ article {
 	align-items: center;
 	background-color: var(--color-back-light);
 	border-radius: var(--base-small);
-	border: 2px solid #ccc;
+	border: 2px solid var(--color-border);
 	display: flex;
 	flex-direction: column;
 	padding: var(--base);
 	text-align: center;
 }
 
+article h1 {
+	line-height: initial;
+}
+
 article img {
 	height: calc(var(--base-large) * 4);
+}
+
+article p {
+	flex-grow: 1;
+}
+
+main .view-project {
+	margin-bottom: var(--base-large);
 }
 
 h1 {
@@ -130,6 +148,21 @@ section {
 
 .effect:hover {
 	filter: grayscale(.4);
+}
+
+.view-project {
+	background-color: var(--color-link);
+	border: 2px solid var(--color-border);
+	color: var(--color-back-light);
+	display: inline-block;
+	line-height: 1;
+	margin-top: var(--base);
+	padding: var(--base-small) var(--base);
+}
+
+.view-project:hover {
+	background-color: var(--color-link-hover);
+	color: var(--color-back-light);
 }
 
 @media screen and (max-width: 640px) {

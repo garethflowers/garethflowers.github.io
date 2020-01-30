@@ -1,6 +1,7 @@
 ---
 description: Portable version of ILSpy
-layout: default
+layout: project
+link: https://github.com/garethflowers/ilspy-portable
 permalink: /ilspy-portable/
 title: IlSpy Portable
 ---
@@ -15,23 +16,23 @@ with you wherever you go.
 
 ## System Requirements
 
-* [.Net Framework 4.0][1].
+*	[.Net Framework 4.0][1].
 
 ##### Optional
 
-* [PortableApps.com Platform][2]
+*	[PortableApps.com Platform][2]
 
 ## Credits
 
-* ILSpy Portable is a redistribution of [ILSpy][3].
+*	ILSpy Portable is a redistribution of [ILSpy][3].
 
 ## License
 
-* Portable application code released under [the MIT license][4].
-* The ILSpy Bundle is released under [the MIT license][5].
+*	Portable application code released under [the MIT license][4].
+*	The ILSpy Bundle is released under [the MIT license][5].
 
- [1]: http://go.microsoft.com/fwlink/?LinkID=186914
- [2]: http://portableapps.com/download
- [3]: http://ilspy.net
- [4]: https://raw.githubusercontent.com/garethflowers/ilspy-portable/master/LICENSE
- [5]: https://github.com/icsharpcode/ILSpy/blob/master/doc/license.txt
+	[1]: http://go.microsoft.com/fwlink/?LinkID=186914
+	[2]: http://portableapps.com/download
+	[3]: http://ilspy.net
+	[4]: https://raw.githubusercontent.com/garethflowers/ilspy-portable/master/LICENSE
+	[5]: https://github.com/icsharpcode/ILSpy/blob/master/doc/license.txt
