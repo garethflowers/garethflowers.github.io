@@ -141,12 +141,12 @@ section {
 }
 
 .effect {
-	filter: grayscale(1);
+	filter: grayscale(0.5);
 	transition: 0.5s filter ease;
 }
 
 .effect:hover {
-	filter: grayscale(0.4);
+	filter: grayscale(0.2);
 }
 
 .view-project {
