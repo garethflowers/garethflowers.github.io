@@ -174,4 +174,8 @@ section {
 		padding: 1em;
 	}
 
+	header .logo {
+		margin: calc(var(--base-large) * 2);
+	}
+
 }
