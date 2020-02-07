@@ -119,10 +119,15 @@ article p {
 }
 
 main nav .logo {
-	height: calc(var(--base-large) * 5);
 	display: block;
-	text-align: center;
+	height: calc(var(--base-large) * 5);
 	margin: 0 auto;
+	text-align: center;
+}
+
+main p img {
+	max-width: 100%;
+	text-align: center;
 }
 
 main .view-project {
