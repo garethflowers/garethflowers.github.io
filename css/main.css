@@ -118,6 +118,13 @@ article p {
 	flex-grow: 1;
 }
 
+main nav .logo {
+	height: calc(var(--base-large) * 5);
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
 main .view-project {
 	margin-bottom: var(--base-large);
 }
