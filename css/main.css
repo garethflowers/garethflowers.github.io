@@ -125,11 +125,6 @@ main nav .logo {
 	text-align: center;
 }
 
-main p img {
-	max-width: 100%;
-	text-align: center;
-}
-
 main .view-project {
 	margin-bottom: var(--base-large);
 }
@@ -141,6 +136,11 @@ h1 {
 p {
 	margin: var(--base) 0;
 	padding: 0;
+}
+
+p img {
+	max-width: 100%;
+	text-align: center;
 }
 
 section {
