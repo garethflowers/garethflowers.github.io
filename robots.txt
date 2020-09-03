@@ -1,3 +1,3 @@
 disallow:
-sitemap: {{ site.url }}/sitemap.xml
+sitemap: https://garethflowers.dev/sitemap.xml
 user-agent: *
