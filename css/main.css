@@ -45,11 +45,14 @@ a:hover {
 
 header {
 	align-items: center;
+	align-self: flex-start;
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font);
 	line-height: 1;
+	position: sticky;
 	text-align: center;
+	top: calc(var(--base) * 4);
 }
 
 header div {
@@ -184,6 +187,12 @@ section {
 		display: flex;
 		flex-direction: column;
 		padding: var(--base);
+	}
+
+	header {
+		align-self: unset;
+		top: unset;
+		position: unset;
 	}
 
 	header .logo {
