@@ -26,6 +26,7 @@ body {
 	color: var(--color-text);
 	display: grid;
 	font-family: var(--font);
+	font-display: swap;
 	grid-gap: var(--base);
 	grid-template-columns: 40% 60%;
 	line-height: 2;
