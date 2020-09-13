@@ -27,7 +27,7 @@ body {
 	display: grid;
 	font-family: var(--font);
 	font-display: swap;
-	grid-gap: var(--base);
+	gap: var(--base);
 	grid-template-columns: 40% 60%;
 	line-height: 2;
 	margin: 0 auto;
@@ -151,7 +151,7 @@ p img {
 
 section {
 	display: grid;
-	grid-gap: var(--base);
+	gap: var(--base);
 	grid-template-columns: repeat(
 		auto-fit,
 		minmax(calc(var(--base) * 15), 1fr)
