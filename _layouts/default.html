@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.locale }}">
 
 <head>
 	<meta charset="utf-8">
@@ -11,8 +11,8 @@
 
 <body>
 	<header itemscope itemtype="http://schema.org/Person">
-		<img class="logo" itemprop="image" src="{{ site.avatar }}?s=250"
-			srcset="{{ site.avatar }}?s=500 2x"
+		<img class="logo" itemprop="image" src="{{ site.logo }}?s=250"
+			srcset="{{ site.logo }}?s=500 2x"
 			alt="Profile photo of {{ site.author.name }}">
 		<h1 itemprop="name">
 			<span itemprop="givenName">Gareth</span>
@@ -23,9 +23,9 @@
 			<a href="{{ site.url }}" itemprop="url">garethflowers.dev</a>
 		</div>
 		<nav>
-			<a href="https://github.com/{{ site.username.github }}">
+			<a href="{{ site.social.links[0] }}">
 				<img src="/images/github.svg" alt="GitHub"></a>
-			<a href="https://twitter.com/{{ site.username.twitter }}">
+			<a href="{{ site.social.links[1] }}">
 				<img src="/images/twitter.svg" alt="Twitter"></a>
 		</nav>
 	</header>

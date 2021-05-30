@@ -2,13 +2,20 @@
 author:
   location: England
   name: Gareth Flowers
-avatar: https://secure.gravatar.com/avatar/5750e5553f140aa42f68c6bbefed6989
-description: Full Stack Developer
-title: Gareth Flowers
-username:
-  twitter: garethflowers
-  github: garethflowers
+description: Personal website of Gareth Flowers, Full Stack Developer.
 layout: default
+locale: en_GB
+logo: https://secure.gravatar.com/avatar/5750e5553f140aa42f68c6bbefed6989
+social:
+  name: Gareth Flowers
+  links:
+    - https://github.com/garethflowers
+    - https://twitter.com/garethflowers
+tagline: Full Stack Developer
+title: Gareth Flowers
+twitter:
+  username: garethflowers
+  card: summary
 
 collections:
   projects:
@@ -20,4 +27,5 @@ exclude:
   - README.md
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 markdown: kramdown
