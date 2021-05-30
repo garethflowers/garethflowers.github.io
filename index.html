@@ -6,12 +6,6 @@ layout: default
 	{% assign projects = site.projects | sort: "description" %}
 	{% for project in projects %}
 	<article>
-		<div>
-			<a href="/{{ project.slug }}">
-				<img src="/assets/{{ project.slug }}.svg"
-					alt="{{ project.title }}">
-			</a>
-		</div>
 		<h1>
 			<a href="/{{ project.slug }}">
 				{{ project.title }}
@@ -20,11 +14,6 @@ layout: default
 		<p>
 			{{ project.description }}
 		</p>
-		<div>
-			<a class="view-project" href="{{ project.slug }}">
-				View Details
-			</a>
-		</div>
 	</article>
 	{% endfor %}
 </section>

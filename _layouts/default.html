@@ -6,15 +6,13 @@
 	<title>{{ site.title }}</title>
 	<meta name="description" content="{{ site.description }}">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
-	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="apple-touch-icon" href="/icon.png">
 </head>
 
 <body>
 	<header itemscope itemtype="http://schema.org/Person">
-		<img class="logo effect" itemprop="image" src="{{ site.avatar }}?s=250"
+		<img class="logo" itemprop="image" src="{{ site.avatar }}?s=250"
 			srcset="{{ site.avatar }}?s=500 2x"
 			alt="Profile photo of {{ site.author.name }}">
 		<h1 itemprop="name">
@@ -31,13 +29,6 @@
 			<a href="https://twitter.com/{{ site.username.twitter }}">
 				<img src="/images/twitter.svg" alt="Twitter"></a>
 		</nav>
-		<div itemprop="worksFor" itemscope
-			itemtype="http://schema.org/Organization" class="job">works at <a
-				href="https://www.merlinbusinesssoftware.com" itemprop="url">
-				<img class="work effect" src="/images/merlin.svg"
-					alt="Merlin Business Software" itemprop="image logo">
-			</a>
-		</div>
 	</header>
 	{{ content }}
 </body>

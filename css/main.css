@@ -2,32 +2,24 @@
 	--base-large: calc(var(--base) * 2);
 	--base-small: calc(var(--base) / 2);
 	--base: 1rem;
-	--color-back-alt: rgb(245, 245, 245);
-	--color-back-light: rgb(255, 255, 255);
-	--color-back: rgb(250, 250, 250);
+	--color-bg-alt: rgb(245, 245, 245);
+	--color-bg-light: rgb(255, 255, 255);
+	--color-bg: rgb(250, 250, 250);
 	--color-border: rgb(200, 200, 200);
 	--color-link-hover: rgb(41, 82, 123);
 	--color-link: rgb(51, 102, 153);
 	--color-text: rgb(51, 51, 51);
-	--font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 body {
-	background-color: var(--color-back);
+	background-color: var(--color-bg);
 	background-attachment: fixed;
-	background-image: repeating-linear-gradient(
-		75deg,
-		transparent,
-		transparent calc(var(--base-large) * 10),
-		var(--color-back-alt) calc(var(--base-large) * 10),
-		var(--color-back-alt) calc(var(--base-large) * 20)
-	);
 	color: var(--color-text);
 	display: grid;
 	font-family: var(--font);
 	font-display: swap;
-	gap: var(--base);
+	gap: var(--base	);
 	grid-template-columns: 40% 60%;
 	line-height: 2;
 	margin: 0 auto;
@@ -37,11 +29,12 @@ body {
 
 a {
 	color: var(--color-link);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:hover {
 	color: var(--color-link-hover);
+	text-decoration: none;
 }
 
 header {
@@ -64,14 +57,14 @@ header div {
 
 header h1 {
 	font-size: var(--base-large);
-	font-weight: 300;
+	font-weight: 100;
 	margin: calc(var(--base)) 0;
 }
 
 header h2 {
 	font-size: 1.2rem;
-	font-weight: 300;
-	margin: var(--base-small) 0;
+	font-weight: 100;
+	margin: 0;
 }
 
 header nav img {
@@ -80,7 +73,7 @@ header nav img {
 }
 
 header .logo {
-	border-radius: 50%;
+	border-radius: 10%;
 	box-shadow: 0 0 var(--base-large) rgb(153, 153, 153);
 	margin: var(--base);
 	max-height: calc(var(--base) * 12);
@@ -99,87 +92,14 @@ header .job {
 	padding: var(--base-small);
 }
 
-article {
-	align-items: center;
-	background-color: var(--color-back-light);
-	border-radius: var(--base-small);
-	border: 2px solid var(--color-border);
-	display: flex;
-	flex-direction: column;
-	padding: var(--base);
-	text-align: center;
-}
-
-article h1 {
-	line-height: initial;
-}
-
-article img {
-	height: calc(var(--base-large) * 4);
-}
-
-article p {
-	flex-grow: 1;
-}
-
-main nav .logo {
-	display: block;
-	height: calc(var(--base-large) * 5);
-	margin: 0 auto;
-	text-align: center;
-}
-
-main .view-project {
-	margin-bottom: var(--base-large);
-}
-
 h1 {
 	font-size: calc(var(--base) * 1.5);
+	font-weight: 300;
+	margin: 0;
 }
 
 p {
-	margin: var(--base) 0;
-	padding: 0;
-}
-
-p img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 100%;
-}
-
-section {
-	display: grid;
-	gap: var(--base);
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(calc(var(--base) * 15), 1fr)
-	);
-}
-
-.effect {
-	filter: grayscale(0.5);
-	transition: 0.5s filter ease;
-}
-
-.effect:hover {
-	filter: grayscale(0.2);
-}
-
-.view-project {
-	background-color: var(--color-link);
-	border: 2px solid var(--color-border);
-	color: var(--color-back-light);
-	display: inline-block;
-	line-height: 1;
-	margin-top: var(--base);
-	padding: var(--base-small) var(--base);
-}
-
-.view-project:hover {
-	background-color: var(--color-link-hover);
-	color: var(--color-back-light);
+	margin: 0 0 0 var(--base-large);
 }
 
 @media screen and (max-width: 640px) {
