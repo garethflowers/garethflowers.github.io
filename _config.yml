@@ -1,4 +1,3 @@
-# Site
 author:
   location: England
   name: Gareth Flowers
@@ -21,11 +20,10 @@ collections:
   projects:
     output: true
 
-# Config
 exclude:
   - Gemfile.lock
   - README.md
 plugins:
+  - jekyll-remote-theme
   - jekyll-sitemap
-  - jekyll-seo-tag
-markdown: kramdown
+remote_theme: garethflowers/jekyll-simple-theme
