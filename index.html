@@ -3,7 +3,8 @@ layout: default
 ---
 
 <div class="projects">
-	{% for repository in site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+	{% assign repos = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+	{% for repository in repos %}
 	<article>
 		<h3>
 			<a href="{{ repository.name | relative_url }}">{{ repository.name }}</a>
