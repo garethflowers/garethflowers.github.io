@@ -2,16 +2,18 @@
 layout: default
 ---
 
-{% for repository in site.github.public_repositories %}
-<article>
-	<h3>
-		<a href="{{ repository.name }}">{{ repository.name | absolute_url }}</a>
-	</h3>
-	<p>{{ repository.description }}</p>
-	<aside>
-		<a href="{{ site.github.repository_url }}">
-			<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ repository.repository_nwo }}?style=social">
-		</a>
-	</aside>
-</article>
-{% endfor %}
+<div class="projects">
+	{% for repository in site.github.public_repositories %}
+	<article>
+		<h3>
+			<a href="{{ repository.name }}">{{ repository.name | absolute_url }}</a>
+		</h3>
+		<p>{{ repository.description }}</p>
+		<aside>
+			<a href="{{ site.github.repository_url }}">
+				<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ repository.full_name }}?style=social">
+			</a>
+		</aside>
+	</article>
+	{% endfor %}
+</div>
