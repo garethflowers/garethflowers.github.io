@@ -6,7 +6,7 @@ layout: default
 	{% for repository in site.github.public_repositories %}
 	<article>
 		<h3>
-			<a href="{{ repository.name }}">{{ repository.name | absolute_url }}</a>
+			<a href="{{ repository.name | relative_url }}">{{ repository.name }}</a>
 		</h3>
 		<p>{{ repository.description }}</p>
 		<aside>
