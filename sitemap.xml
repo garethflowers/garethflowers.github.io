@@ -8,7 +8,7 @@ layout: null
 	</url>
 	{% for repository in site.github.public_repositories %}
 	<url>
-		<loc>{{ repository.name | absolute_url }}</loc>
+		<loc>{{ repository.name | append: '/' | absolute_url }}</loc>
 		<lastmod>{{ repository.updated_at | date_to_xmlschema }}</lastmod>
 	</url>
 	{% endfor %}
