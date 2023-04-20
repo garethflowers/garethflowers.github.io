@@ -1,3 +1,4 @@
-disallow:
-sitemap: https://garethflowers.dev/sitemap.xml
-user-agent: *
+User-agent: *
+Disallow:
+
+Sitemap: https://garethflowers.dev/sitemap.xml
