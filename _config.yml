@@ -3,7 +3,8 @@ description: Personal portfolio website of Gareth Flowers, Software Engineer.
 logo: https://www.gravatar.com/avatar/5750e5553f140aa42f68c6bbefed6989?s=1000
 plugins:
   - jekyll-github-metadata
-  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
 remote_theme: garethflowers/jekyll-simple-theme
 social:
   name: Gareth Flowers
