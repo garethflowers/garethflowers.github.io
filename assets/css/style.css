@@ -1,0 +1,173 @@
+:root {
+	--base-large: calc(var(--base) * 2);
+	--base-small: calc(var(--base) / 2);
+	--base: 1rem;
+	--color-bg-alt: rgb(245, 245, 245);
+	--color-bg-light: rgb(255, 255, 255);
+	--color-bg: rgb(250, 250, 250);
+	--color-border: rgb(200, 200, 200);
+	--color-link-hover: rgb(41, 82, 123);
+	--color-link: rgb(51, 102, 153);
+	--color-text: rgb(51, 51, 51);
+	--font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--padding: calc(var(--base) * 3);
+}
+
+body {
+	background-color: var(--color-bg);
+	background-attachment: fixed;
+	color: var(--color-text);
+	display: grid;
+	font-family: var(--font);
+	gap: calc(var(--padding) * 2);
+	grid-template-columns: min-content auto;
+	line-height: 2;
+	margin: 0 auto;
+	max-width: 980px;
+	padding: var(--padding);
+}
+
+body > * {
+	overflow: hidden;
+}
+
+a {
+	color: var(--color-link);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	text-decoration: underline;
+}
+
+header {
+	align-items: center;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font);
+	line-height: 1;
+	position: sticky;
+	text-align: center;
+	top: var(--padding);
+}
+
+header .logo {
+	border-radius: 50%;
+	box-shadow: 0 0 var(--base) rgb(153, 153, 153);
+	margin: var(--base);
+}
+
+header h1 {
+	font-size: var(--base-large);
+	font-weight: 100;
+	margin: calc(var(--base)) 0;
+}
+
+header h2 {
+	font-size: calc(var(--base) * 1.2);
+	font-weight: 100;
+	margin: var(--base-small) 0;
+}
+
+header nav {
+	margin-block-start: var(--base);
+}
+
+header nav img {
+	padding: var(--base-small);
+}
+
+header nav a {
+	display: inline-block;
+}
+
+main nav .downloads, main nav .links {
+	display: flex;
+	flex-direction: row;
+	gap: var(--base);
+	list-style: none;
+	padding: 0;
+	justify-content: flex-end;
+}
+
+main nav .downloads img {
+	height: var(--base);
+}
+
+main .projects {
+	display: grid;
+	gap: var(--base);
+	grid-template-columns: repeat(auto-fit, minmax(calc(var(--base) * 14), 1fr));
+}
+
+main .projects article {
+	background-color: var(--color-bg-alt);
+	border-radius: 10px;
+	border: 1px solid var(--color-border);
+	box-shadow: 0 0 2px var(--color-border);
+	display: flex;
+	flex-direction: column;
+	padding: var(--base);
+}
+
+main .projects h3, main .projects p {
+	margin: 0;
+	line-height: 1.5;
+}
+
+main .projects aside {
+	line-height: 1;
+	margin-block-start: auto;
+	text-align: end;
+}
+
+h1, h2, h3, h4 {
+	font-weight: 300;
+	margin: 0;
+}
+
+h1 {
+	font-size: calc(var(--base) * 1.8);
+}
+
+h2 {
+	font-size: calc(var(--base) * 1.5);
+}
+
+h3 {
+	font-size: calc(var(--base) * 1.3);
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		gap: var(--base-large);
+		padding: var(--base);
+	}
+
+	body:has(main.project) {
+		flex-direction: column-reverse;
+	}
+
+	header {
+		align-self: unset;
+		top: unset;
+		position: unset;
+	}
+
+	header .logo {
+		margin: var(--padding);
+	}
+
+	main {
+		width: 100%;
+	}
+
+	main .projects {
+		grid-template-columns: 1fr;
+	}
+}
