@@ -1,0 +1,33 @@
+name: Build and Publish Images
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    tags:
+      - "*.*.*"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: |
+          curl -L \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $DEPLOY_TOKEN"\
+            "https://api.github.com/user/repos"
+            | jq -c ".[] | select( .has_pages == true )" | jq -c ".full_name" | while read REPO; do
+              STATUS=$(curl -L \
+                -X POST \
+                -H "Accept: application/vnd.github+json" \
+                -H "Authorization: Bearer $DEPLOY_TOKEN"\
+                https://api.github.com/repos/$REPO/pages/builds
+                | jq ".status"
+              )
+              echo "$REPO = $STATUS"
+          done
+        with:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+
