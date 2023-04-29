@@ -16,15 +16,14 @@ jobs:
         run: |
           curl -L \
             -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.DEPLOY_TOKEN }}"\
-            "https://api.github.com/user/repos"
+            -H "Authorization: Bearer ${{ secrets.DEPLOY_TOKEN }}" \
+            "https://api.github.com/user/repos" \
             | jq -c ".[] | select( .has_pages == true )" | jq -c ".full_name" | while read REPO; do
-              STATUS=$(curl -L \
+              echo "Update gh-pages $REPO"
+              curl -L \
                 -X POST \
                 -H "Accept: application/vnd.github+json" \
                 -H "Authorization: Bearer ${{ secrets.DEPLOY_TOKEN }}"\
-                https://api.github.com/repos/$REPO/pages/builds
+                https://api.github.com/repos/$REPO/pages/builds \
                 | jq ".status"
-              )
-              echo "$REPO = $STATUS"
           done
