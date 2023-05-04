@@ -18,7 +18,7 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.DEPLOY_TOKEN }}" \
             "https://api.github.com/user/repos" \
-            | jq -c ".[] | select( .has_pages == true and .full_name != \"${{ github.event.repository.name }}\" )" \
+            | jq -c ".[] | select( .has_pages == true and .full_name != \"${{ github.repository }}\" )" \
             | jq -r ".full_name" \
             | while read REPO
           do
