@@ -189,7 +189,7 @@ h3 {
 		filter: brightness(.8) contrast(1.2);
 	}
 
-	header nav img, main nav img, main .projects aside img {
+	img[src$=".svg"] {
 		filter: invert(1) contrast(.8);
 	}
 }
