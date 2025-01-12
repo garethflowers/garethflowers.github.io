@@ -17,8 +17,8 @@
 	<header itemscope itemtype="http://schema.org/Person">
 		<div>
 			<a href="/">
-				<img class="logo" itemprop="image" src="{{ site.github.owner_gravatar_url }}?s=250" srcset="{{ site.github.owner_gravatar_url }}?s=500 2x"
-				alt="Profile photo of {{ site.github.owner_name }}." height="192" width="192">
+				<img class="logo" itemprop="image" src="/assets/logo-250.avif" srcset="/assets/logo-500.avif 2x"
+				alt="Profile photo of {{ site.github.owner_name }}." height="250" width="250">
 			</a>
 		</div>
 		<h1 class="name" itemprop="name">
@@ -63,7 +63,7 @@
 			<ul class="links">
 				<li>
 					<a href="{{ site.github.repository_url }}">
-						<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ site.github.repository_nwo }}?style=social" height="20">
+						<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ site.github.repository_nwo }}?style=social" height="20" width="auto">
 					</a>
 				</li>
 				{% if site.docker_repository %}
