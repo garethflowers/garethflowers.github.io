@@ -63,13 +63,13 @@
 			<ul class="links">
 				<li>
 					<a href="{{ site.github.repository_url }}">
-						<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ site.github.repository_nwo }}?style=social" height="20" width="auto">
+						<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/{{ site.github.repository_nwo }}?cacheSeconds=86400&style=social" height="20" width="auto">
 					</a>
 				</li>
 				{% if site.docker_repository %}
 				<li>
 					<a href="https://hub.docker.com/r/{{ site.docker_repository }}">
-						<img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/{{ site.docker_repository }}?style=social" height="20">
+						<img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/{{ site.docker_repository }}?cacheSeconds=86400&style=social" height="20" width="auto">
 					</a>
 				</li>
 				{% endif %}
